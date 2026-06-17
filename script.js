@@ -110,23 +110,6 @@ animatedElements.forEach(el => observer.observe(el));
    PHASE 2 CINEMATIC SYSTEM
 ========================= */
 
-const hero = document.querySelector(".hero");
-const heroContent = document.querySelector(".hero-content");
-
-window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-
-    /* 1. PARALLAX SHIFT (TEXT MOVES OPPOSITE DIRECTION) */
-    if (heroContent) {
-        heroContent.style.transform = `translateY(${scrollY * 0.15}px)`;
-    }
-
-    /* 2. HERO COMPRESSION EFFECT */
-    if (hero) {
-        const scale = Math.max(1 - scrollY / 1200, 0.92);
-        hero.style.transform = `scale(${scale})`;
-    }
-});
 
 const counters = document.querySelectorAll(".counter");
 

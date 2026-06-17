@@ -276,6 +276,8 @@ section {
         rgba(15, 23, 42, 0.55),
         rgba(15, 23, 42, 0.90)
     );
+
+    z-index: 1; /* 🔴 CRITICAL FIX */
 }
 
 /* ENSURE CONTENT IS ABOVE IMAGE */
@@ -332,9 +334,7 @@ section {
     position: relative;
 }
 
-#services {
-    padding-top: 5px;
-}
+
 
 
 /* big image */
@@ -1230,3 +1230,9 @@ section {
         padding-right: 10px;
     }
 }
+
+#services {
+    margin-top: 20px;
+}
+
+
